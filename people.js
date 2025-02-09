@@ -9,11 +9,16 @@ const newArrayStringhe = require("./hobbies");
 // test con altri parametri
 console.log("Test:");
 console.log(newObjFirstLastName("Ajeje", "Brazorf"));
-console.log(newArrayStringhe("Ajeje", "Bra", "Zorf"));
+console.log(newArrayStringhe("sport", "musica", "libri"));
 
 function newObjFullNameHobbies() {
+    let fullName = newObjFirstLastName();
+    let hobbies = newArrayStringhe();
+
     return {
         fullName,
         hobbies
     };
 }
+
+console.log("Il risultato è:", newObjFullNameHobbies(), );
