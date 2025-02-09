@@ -16,3 +16,4 @@ function newObjNomeCognome(firstName, lastName) {
 
 console.log(newObjNomeCognome("Giorgio Spiros", "Topala"));
 
+module.exports = newObjNomeCognome;
