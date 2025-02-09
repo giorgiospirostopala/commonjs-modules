@@ -6,3 +6,7 @@
 const newObjNomeCognome = require("./names");
 const arrayStringhe = require("./hobbies");
 
+// test con altri parametri
+console.log("Test:")
+console.log(newObjNomeCognome("Ajeje", "Brazorf"));
+console.log(arrayStringhe("Ajeje", "Bra", "Zorf"));
