@@ -12,8 +12,8 @@ console.log(newObjFirstLastName("Ajeje", "Brazorf"));
 console.log(newArrayStringhe("sport", "musica", "libri"));
 
 function newObjFullNameHobbies() {
-    let fullName = newObjFirstLastName();
-    let hobbies = newArrayStringhe();
+    let fullName = newObjFirstLastName("Inserisci nome", "Inserisci cognome");
+    let hobbies = newArrayStringhe("Inserisci hobby 1", "hobby 2", "hobby 3");
 
     return {
         fullName,
@@ -22,3 +22,20 @@ function newObjFullNameHobbies() {
 }
 
 console.log("Il risultato è:", newObjFullNameHobbies(), );
+
+
+/// Domanda: 
+//  Se la funzione non deve avere parametri, per "riutilizzarla" bisogna mettere mano ogni volta sui valori? 
+
+//  Avrebbe avuto senso fare in questo modo, per poterla riutilizzare direttamente dal console.log()?
+function provaConParametri(nome, cognome, hobby1, hobby2, hobby3) {
+    let fullName = newObjFirstLastName(nome, cognome);
+    let hobbies = newArrayStringhe(hobby1, hobby2, hobby3);
+
+    return {
+        fullName,
+        hobbies
+    };
+}
+
+console.log(provaConParametri("Nome", "Cogn", "h1", "h2", "h3"));
