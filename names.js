@@ -4,7 +4,7 @@
 2. Esporta la funzione dal file.
 */
 
-function newObjNomeCognome(firstName, lastName) {
+function newObjFirstLastName(firstName, lastName) {
     return {
         firstName,
         lastName,
@@ -12,7 +12,7 @@ function newObjNomeCognome(firstName, lastName) {
 }
 
 /// OPPURE
-//const newObjNomeCognome = (firstName, lastName) => {return {firstName, lastName}};
+//const newObjFirstLastName = (firstName, lastName) => {return {firstName, lastName}};
 
-console.log(newObjNomeCognome("Giorgio Spiros", "Topala"));
-module.exports = newObjNomeCognome;
+console.log(newObjFirstLastName("Giorgio Spiros", "Topala"));
+module.exports = newObjFirstLastName;
